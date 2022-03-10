@@ -125,10 +125,19 @@ header {
     margin: 0 auto;
     padding: 50px 0;
     background-color: #555;
+    position: relative;
 }
 
 header img {
-    /* ADD THE RULES POSITION THE LOGO*/
+ /* 
+THREE OPTIONS FOR POSITIONING: 
+1. relative - leaves the space it takes up in the layout. 
+2. Absolute - collapses the space it takes up in the layout and positions it to the browser.
+3. absolute & relative - collapses the space it takes up and positions it to a parent *relative* container. 
+*/
+    position: absolute; 
+    top: 85px;
+    left: 50px;
 }
 
 section {
@@ -160,6 +169,9 @@ section {
     height: 150px;
     background-color: #696969;
     /* ADD THE RULES POSITION THE SECOND BOX */
+    position: relative;
+    top: 0;
+    left: 150px;
 }
 
 .box-3 {
@@ -167,6 +179,9 @@ section {
     height: 150px;
     background-color: #000;
     /* ADD THE RULES POSITION THE THIRD BOX */
+    position: relative;
+    top: 0;
+    left: 300px;
 }
 
 footer {
@@ -181,6 +196,7 @@ footer {
     footer position it from the left 50% and give it a negative margin
     of half of it's width
     */
+
 }
 
 
